@@ -13,7 +13,7 @@ I'm Trevor Heshka, a full-stack and AI developer and IT support specialist in Na
 - BC Real Estate Market Pulse - regional market data, maps and AI-written summaries.
 - HeshRadio - an SDR receiver, rig controller and digital-modes station built with Rust and Tauri.
 More: open-source projects · AI apps and assistants · IT support in Nanaimo · full-stack development · about Trevor · trevor@trevorheshka.com
-IT Support NanaimoFull-Stack NanaimoAI AppsProjectsAbout
+IT Support NanaimoFull-Stack NanaimoAI AppsProjectsServicesWritingAbout
 
 ## About (https://trevorheshka.com/about/)
 Title: About Trevor Heshka: Full-Stack & AI Developer in Nanaimo, BC
@@ -44,6 +44,17 @@ From 2011 to 2019 I owned and ran Yard Plots Landscaping in Nanaimo. Since 2020 
 - BC Court List Archive: searchable archives of BC daily court lists
 - BC Real Estate Market Pulse: regional market data with AI-written summaries
 - HeshRadio and other projects
+### FAQ
+Who is Trevor Heshka?
+A full-stack and AI developer and IT support specialist based in Nanaimo, BC, and the founder of Hesh Co.
+When was Hesh Co. founded?
+September 2026, to build web portals, data apps and AI assistants.
+How long has Trevor worked in technical support?
+Since 1998, starting at Videon Cable Systems, then Microsoft MSN support (2003–2006) and Shaw Cable (2006–2011).
+What certificates does Trevor hold?
+The NPower Canada Junior IT Analyst Program, the Google IT Support Professional Certificate and Google Cybersecurity Specialization, and Cisco Networking Academy courses, all in 2024.
+How do I contact Trevor?
+Email trevor@trevorheshka.com.
 ### Contact
 Email trevor@trevorheshka.com, or find me on LinkedIn and GitHub.
 © 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
@@ -52,7 +63,7 @@ Email trevor@trevorheshka.com, or find me on LinkedIn and GitHub.
 Title: AI Developer in Nanaimo: LLM Apps & AI Assistants | Trevor Heshka
 Summary: AI developer in Nanaimo, BC building LLM apps, AI assistants, data annotation tools and agent workflows with AI coding tools. Remote and Vancouver Island.
 Trevor Heshka
-HomeIT SupportFull-StackAIAboutContact
+HomeIT SupportFull-StackAIServicesWritingAboutContact
 Nanaimo, BC · Remote across Canada
 ### AI Apps, Assistants and Agent Workflows
 Want AI built into a real product? I'm Trevor Heshka, a Nanaimo-based full-stack and AI developer who builds LLM apps such as AI assistants and data annotation tools, and uses AI coding tools and agent workflows to ship them. I also create custom LLM models, and my latest projects run on them. My BC Real Estate Market Pulse adds AI-written market summaries to public data, and MeshCode is my local-first AI coding IDE.
@@ -66,6 +77,7 @@ Email trevor@trevorheshka.com See past projects
 - Agent workflows and AI coding tools for development teams
 - Deployment, sign-in and API key handling
 ### AI projects
+- HeshBot: the Gemini-powered assistant on this site, grounded in its own content, with a vanilla JS widget and PHP backend (open source)
 - AnnotatorIQ: a data annotation app published on this site
 - MeshCode: a local-first AI coding IDE with an agent pipeline in isolated git worktrees, a sandboxed shell and OS-vault API keys
 - BC Real Estate Market Pulse: regional market data with AI-powered insights
@@ -99,13 +111,14 @@ Yes. I also have several private GitHub projects that I can show on request. Ema
 
 ## Projects (https://trevorheshka.com/projects/)
 Title: Projects — Open Source Software by Trevor Heshka
-Summary: Open-source projects by Trevor Heshka: HeshRadio SDR, WiFi Body Sensor, and Nanaimo and BC public-data sites.
+Summary: Open-source projects by Trevor Heshka: HeshBot AI chatbot, HeshRadio SDR, WiFi Body Sensor, and Nanaimo and BC public-data sites.
 Trevor Heshka
 HomeProjectsFull-StackAIAboutContact
 Open source · Nanaimo, BC
 ### Projects
 Software I've built and published: radio and signal tools, automation, and public-data sites for Nanaimo and BC. Source code is on GitHub.
 ### All projects
+- HeshBot — HeshBot: Trevor Heshka's own Gemini-powered website assistant. A dependency-free vanilla JS chat widget with a PHP 7.4 backend, rate limiting, and answers grounded in this site's content. Open source. · GitHub
 - HeshRadio — HeshRadio: SDR receiver (100 kHz–1.75 GHz), CAT rig controller and digital modes station for Windows and Android, built with Rust, Tauri v2, React and TypeScript. · GitHub
 - WiFi Body Sensor — WiFi Body Sensor: experimental through-wall motion and breathing sensing on Windows using a desktop Wi-Fi adapter and a Telus Wi-Fi modem, written in Python. · GitHub
 - Nanaimo City Portal (Bylaw Tracker) — Independent archive of public City of Nanaimo bylaws, Council records and committee activity. · GitHub
@@ -119,7 +132,7 @@ See full-stack development, AI development and IT support, or email trevor@trevo
 Title: IT Support in Nanaimo & Remote | Trevor Heshka
 Summary: Computer, laptop and phone repair, networking, security and remote IT support in Nanaimo and on Vancouver Island from Trevor Heshka, with 25+ years in technical support.
 Trevor Heshka
-HomeIT SupportFull-StackAIAboutContact
+HomeIT SupportFull-StackAIServicesWritingAboutContact
 Nanaimo, BC · Remote across Canada
 ### IT Support in Nanaimo and Remote
 Need IT help in Nanaimo? I'm Trevor Heshka, a Nanaimo-based IT specialist who diagnoses and repairs desktops, laptops and mobile phones, fixes networking and security problems, and supports home and small-business clients on site on Vancouver Island or remotely. I've done customer-facing technical support since 1998, including Tier 1 to 3 help desk work at Shaw and Microsoft MSN Support.
@@ -168,7 +181,7 @@ Yes. I also have several private GitHub projects that I can show on request. Ema
 Title: Full-Stack Developer in Nanaimo, BC | Trevor Heshka
 Summary: Full-stack web developer in Nanaimo building web portals, data apps and AI assistants with React, Node.js, Firebase and Cloudflare, for Vancouver Island and remote clients.
 Trevor Heshka
-HomeIT SupportFull-StackAIAboutContact
+HomeIT SupportFull-StackAIServicesWritingAboutContact
 Nanaimo, BC · Remote across Canada
 ### Full-Stack Developer in Nanaimo, BC
 Looking for a full-stack developer in Nanaimo? I'm Trevor Heshka, founder of Hesh Co., and I build and deploy web portals, data apps and AI assistants end to end: front end, APIs, databases, sign-in and hosting. My public-data apps for BC court lists, Nanaimo council meetings and bylaws, and BC real estate are live at trevorheshka.com.
@@ -184,6 +197,7 @@ Email trevor@trevorheshka.com See past projects
 - Front end: HTML, CSS, JavaScript/TypeScript, React
 - Back end: Node.js, SQL/SQLite, Python
 - Auth and hosting: Firebase authentication, IIS, Cloudflare Workers and R2
+- HeshBot: this site's AI chat assistant, a dependency-free JavaScript widget with a PHP 7.4 API, rate limiting and same-origin checks
 - HubIQ: support and governance platform with Firebase sign-in, role-based access, Node and SQLite on IIS
 - Agile and Scrum workflow; Trello and JIRA
 ### Remote, Nanaimo and Vancouver Island
@@ -209,6 +223,103 @@ How do I start a project?
 Email trevor@trevorheshka.com with a short description of the project and I'll reply to set up a call.
 Can I see private projects?
 Yes. I also have several private GitHub projects that I can show on request. Email me to arrange a walkthrough.
+© 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
+
+## Services (https://trevorheshka.com/services/)
+Title: Services: IT Support, Full-Stack & AI Development in Nanaimo | Trevor Heshka
+Summary: IT support in Nanaimo, full-stack web development and AI/LLM development from Trevor Heshka (Hesh Co.), on Vancouver Island and remote across Canada.
+Trevor Heshka
+HomeProjectsServicesWritingAIAboutContact
+Nanaimo, BC · Remote across Canada
+### Services
+I'm Trevor Heshka. Through Hesh Co. I offer IT support in Nanaimo, full-stack web development and AI/LLM development. I work remotely with clients anywhere in Canada and on site in Nanaimo and on Vancouver Island.
+Email trevor@trevorheshka.com See projects
+### IT support in Nanaimo
+Computer, laptop and phone repair, networking, security and security cameras for homes and small businesses in Nanaimo and on Vancouver Island, plus remote support.
+- Desktop and laptop diagnosis, repair and upgrades
+- Android and iOS phone setup and repair
+- Home and small-office networks, Wi-Fi and VPN
+- Malware removal, patching and MFA/2FA
+- Security camera installation and maintenance
+Price: Contact for a quote
+More about IT support in Nanaimo
+### Full-stack web development
+Web portals, public-data apps, APIs and data migration, built and deployed end to end.
+- Web portals with sign-in and role-based access
+- Public-data web apps: collect, clean, search and map data
+- APIs and data migration
+- Deployment on IIS, Cloudflare Workers/R2 and Firebase, CI/CD with GitHub Actions
+More about full-stack development
+### AI and LLM development
+Custom LLM models, AI assistants in websites and apps, and LLM apps on top of your data.
+- Custom LLM models built and fine-tuned for my own apps
+- AI assistants in websites and web apps (like HeshBot on this site)
+- LLM apps on top of your data and data annotation tools
+- Agent workflows and AI coding tools
+More about AI and LLM development
+### How to book
+Email trevor@trevorheshka.com with a short description of what you need, where you are, and when it suits you. I'll reply to set up a call, a remote session or an on-site visit.
+© 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
+
+## Writing (https://trevorheshka.com/writing/)
+Title: Writing: AI, LLM and Full-Stack Notes | Trevor Heshka
+Summary: Deep dives by Trevor Heshka on custom LLM development, building the HeshBot AI assistant, and public-data apps for BC.
+Trevor Heshka
+HomeProjectsServicesWritingAIAboutContact
+Writing · Nanaimo, BC
+### Writing
+Notes on how I build AI and full-stack projects.
+### Articles
+- How I approach custom LLM development — I build and fine-tune custom LLM models for my own apps, and my latest projects run on them. Here is where that work sits alongside the other AI tools I build.
+- How I built HeshBot, the AI assistant on this site — HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls Google Gemini, grounded in this site's public pages.
+- Building public-data apps for BC: court lists, council meetings and real estate — Several of my live builds turn public British Columbia data into searchable web apps: the BC Court List Archive, the Civic Meeting Hub, the Nanaimo Bylaw Tracker and BC Real Estate Market Pulse.
+© 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
+
+## Project: heshbot (https://trevorheshka.com/projects/heshbot/)
+Title: HeshBot — Gemini AI Website Chatbot (Open Source) | Trevor Heshka
+Summary: HeshBot: Trevor Heshka's own Gemini-powered website assistant. A dependency-free vanilla JS chat widget with a PHP 7.4 backend, rate limiting, and answers grounded in this site's content. Open source.
+Trevor Heshka
+HomeProjectsFull-StackAIAboutContact
+Open source · AI · Vanilla JS · PHP
+### HeshBot
+HeshBot is the chat assistant on this website. I built it to replace a third-party chat widget: it runs on my own hosting, calls the Google Gemini API, and answers questions about my services and projects using only the public content of this site. When it doesn't know something, it says so and points you to email.
+View source on GitHub All projects
+### What it does
+- Answers visitor questions about my full-stack, AI and IT support work, grounded in a knowledge file built from this site's pages
+- Says it doesn't know instead of guessing, and suggests emailing trevor@trevorheshka.com
+- Falls back to other Gemini flash models when one is unavailable, with a friendly message when the free quota runs out
+### Front end
+- Dependency-free vanilla JavaScript and CSS widget
+- A small launcher bubble; the widget only loads when you click it
+- Keyboard and screen-reader friendly (dialog and live-log roles, Esc to close) and full-screen on phones
+- Markdown-lite rendering that escapes the model's output before formatting it
+- Conversation kept in sessionStorage for the current tab only
+### Back end
+- Single PHP 7.4 endpoint using curl to call the Gemini REST API
+- API key kept in a config file outside the web root
+- Per-IP rate limiting (file-based), message length and history caps, and a same-origin check
+- JSON errors, and only the chat endpoint is reachable from the web
+### Built with
+- JavaScript, CSS, PHP 7.4, Python (knowledge build script)
+- Google Gemini API
+- MIT licence
+### FAQ
+What is HeshBot?
+HeshBot is the chat assistant on trevorheshka.com. It calls the Google Gemini API and answers questions using only the public content of this site.
+Is HeshBot open source?
+Yes. The code is MIT-licensed on GitHub at github.com/YardPhantom/HeshBot.
+What is HeshBot built with?
+A dependency-free vanilla JavaScript and CSS widget, a single PHP 7.4 endpoint that uses curl to call the Gemini REST API, and a Python script that builds its knowledge file from the site's pages.
+How does HeshBot avoid making things up?
+It is grounded in a knowledge file built from this site's pages, and when the answer isn't there it says so and suggests emailing trevor@trevorheshka.com.
+How is HeshBot protected from abuse?
+Per-IP file-based rate limiting, message length and history caps, a same-origin check, and only the chat endpoint is reachable from the web. The API key is kept outside the web root.
+### Source code
+The code, README and licence are on GitHub: github.com/YardPhantom/HeshBot.
+### Related
+- AI development — how I build AI assistants like this
+- Full-stack development
+- All projects
 © 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
 
 ## Project: heshradio (https://trevorheshka.com/projects/heshradio/)
@@ -238,6 +349,17 @@ View source on GitHub All projects
 - Tauri v2 and Rust desktop core
 - Web Audio API DSP: Goertzel tone filters and Butterworth IIR filters
 - MIT licence
+### FAQ
+What is HeshRadio?
+A software defined radio (SDR) receiver, multi-vendor transceiver CAT rig controller, digital modes suite and audio command deck.
+What frequencies does HeshRadio cover?
+Continuous tuning from 100 kHz to 1.75 GHz.
+Which platforms does HeshRadio run on?
+Windows 10/11 desktops and the Samsung Galaxy S26 Ultra over USB-OTG, with a Rust Tauri v2 core and a React and TypeScript interface.
+Which digital modes does it support?
+APRS, FT8 and SSTV (Robot36), plus an EAS SAME decoder for NOAA weather radio.
+Is HeshRadio open source?
+Yes, under the MIT licence: github.com/YardPhantom/HeshRadio.
 ### Source code
 The code, README and licence are on GitHub: github.com/YardPhantom/HeshRadio.
 ### Related
@@ -269,10 +391,102 @@ View source on GitHub All projects
 - Windows 10/11 connected to a Telus Wi-Fi modem on 5 GHz
 - Python 3.10+ with FastAPI, Uvicorn, websockets, NumPy and SciPy
 - Runs locally and opens a dashboard at 127.0.0.1:8000
+### FAQ
+What does WiFi Body Sensor do?
+It detects human presence, walking and breathing through interior walls using a standard desktop Wi-Fi adapter and a Telus Wi-Fi modem.
+Does it need special hardware?
+No radar hardware or custom firmware. It runs on Windows 10/11 connected to a Telus Wi-Fi modem on 5 GHz.
+How does it sense movement?
+It polls the modem's signal strength (RSSI) at 20–25 Hz, times ICMP pings to catch latency jitter, watches 802.11ax link rate changes, and filters for breathing (0.15–0.45 Hz) and movement (0.5–3.0 Hz).
+What does it need to run?
+Python 3.10+ with FastAPI, Uvicorn, websockets, NumPy and SciPy. It opens a local dashboard at 127.0.0.1:8000.
 ### Source code
 The code, README and licence are on GitHub: github.com/YardPhantom/wifi-body-sensor.
 ### Related
 - AI development
 - IT support and networking
 - All projects
+© 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
+
+## Article: bc-public-data-apps (https://trevorheshka.com/writing/bc-public-data-apps/)
+Title: Building public-data apps for BC: court lists, council meetings and real estate | Trevor Heshka
+Summary: Several of my live builds turn public British Columbia data into searchable web apps: the BC Court List Archive, the Civic Meeting Hub, the Nanaimo Bylaw Tracker and BC Real Estate Market Pulse.
+Trevor Heshka
+HomeProjectsServicesWritingAIAboutContact
+Full-stack · Public data · October 21, 2026 · Trevor Heshka
+### Building public-data apps for BC: court lists, council meetings and real estate
+Several of my live builds turn public British Columbia data into searchable web apps: the BC Court List Archive, the Civic Meeting Hub, the Nanaimo Bylaw Tracker and BC Real Estate Market Pulse.
+### Why public data
+Public records are often spread across many pages and formats, and hard to search. My public-data apps collect, clean, search and map that data so people can find what they need.
+### BC Court List Archive
+The BC Court List Archive keeps searchable archives of BC daily court lists, so you can search archived criminal court appearance lists by name or court file number. The related BC Justice Data Hub, on GitHub, is a BC justice data collection with SQLite full-text search across cases, people, judgments and crime statistics.
+### Council meetings and bylaws
+The Civic Meeting Hub gathers public meeting agendas and minutes into one portal. The Nanaimo Bylaw Tracker is an independent archive of publicly available City of Nanaimo bylaws, amendments, Council records and committee activity; its code is on GitHub.
+### BC Real Estate Market Pulse
+BC Real Estate Market Pulse shows regional real estate market data, maps and charts across BC real estate boards, with AI-written summaries.
+### How they're built
+The stack I work with for apps like these: HTML, CSS and JavaScript/TypeScript on the front end, Node.js, SQL/SQLite and Python behind them, and deployment on IIS, Cloudflare Workers/R2 and GitHub Actions.
+### Need something similar?
+I build full-stack web apps and public-data tools. Email trevor@trevorheshka.com.
+### Related
+- Full-stack development
+- Projects
+- More writing
+© 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
+
+## Article: custom-llm-development (https://trevorheshka.com/writing/custom-llm-development/)
+Title: How I approach custom LLM development | Trevor Heshka
+Summary: I build and fine-tune custom LLM models for my own apps, and my latest projects run on them. Here is where that work sits alongside the other AI tools I build.
+Trevor Heshka
+HomeProjectsServicesWritingAIAboutContact
+AI · LLM · October 21, 2026 · Trevor Heshka
+### How I approach custom LLM development
+I build and fine-tune custom LLM models for my own apps, and my latest projects run on them. Here is where that work sits alongside the other AI tools I build.
+### AI projects I've built
+- AnnotatorIQ: a data annotation app published on this site, the kind of tool used to prepare AI training data
+- MeshCode: my local-first AI coding IDE, which runs an agent pipeline in isolated git worktrees with a sandboxed shell and keeps API keys in the OS vault
+- BC Real Estate Market Pulse: AI-written summaries over public market data
+### Hosted models still have a place
+Not everything needs a custom model. HeshBot, the assistant on this site, calls the Google Gemini API and is grounded in a knowledge file built from the site's own pages, which keeps it simple to run.
+### Working with me
+I build AI assistants into websites and web apps and handle the hosting, sign-in and API keys around them. See AI development or email trevor@trevorheshka.com.
+### Related
+- AI development
+- HeshBot
+- More writing
+© 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
+
+## Article: how-heshbot-was-built (https://trevorheshka.com/writing/how-heshbot-was-built/)
+Title: How I built HeshBot, the AI assistant on this site | Trevor Heshka
+Summary: HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls Google Gemini, grounded in this site's public pages.
+Trevor Heshka
+HomeProjectsServicesWritingAIAboutContact
+AI · Open source · October 21, 2026 · Trevor Heshka
+### How I built HeshBot, the AI assistant on this site
+HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls Google Gemini, grounded in this site's public pages.
+### Why build my own
+The site used a third-party Typebot widget that loaded about 164 KB from a CDN. I wanted a chat assistant that runs on my own hosting, answers from my own content, and loads nothing until someone asks for it.
+### The widget
+- Vanilla JavaScript and CSS with no dependencies
+- A small launcher bubble; the widget script and styles load only on the first click
+- Keyboard and screen-reader support: a dialog with a live log, Esc to close, focus returned to the launcher
+- Full-screen on phones and styled to match the site's dark theme
+- A markdown-lite renderer that escapes the model's output first, then allows a small whitelist of formatting and safe links
+- The conversation is kept in sessionStorage, so it lasts for the current tab only
+### The backend
+- One PHP 7.4 file using curl to call the Gemini REST API, because that's what the cPanel/LiteSpeed host runs
+- The API key lives in a config file outside public_html (or an environment variable), never in the repo
+- It tries a list of Gemini flash models in order and falls back on errors, with a friendly “email Trevor” message when the free quota runs out
+- Per-IP file-based rate limiting, message length and history caps, a same-origin check and JSON errors
+- An .htaccess file makes chat.php the only reachable file in the API folder
+### Grounding
+A Python script reads the site's public pages (home, about, AI, projects, services and the landing pages) and writes a knowledge file. The system prompt tells HeshBot to answer only from that file, to say it doesn't know otherwise, and to point people to email. When the site changes, I rerun the script.
+### Testing
+I tested it locally on Apache with PHP, checked the PHP against 7.4 compatibility rules, mocked the Gemini call when no key was present, and took desktop and mobile screenshots in headless Chrome before going live.
+### Source
+HeshBot is MIT-licensed: github.com/YardPhantom/HeshBot. More detail is on the project page.
+### Related
+- HeshBot project page
+- AI development
+- More writing
 © 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
