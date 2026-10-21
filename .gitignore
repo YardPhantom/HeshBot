@@ -1,0 +1,7 @@
+heshbot-config.php
+api/config.php
+api/data/
+*.log
+.env
+.DS_Store
+node_modules/

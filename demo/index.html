@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HeshBot demo</title><style>body{margin:0;background:#0A0A0F;color:#e8e8ee;font:16px system-ui;padding:40px}h1{font-family:"Fragment Mono",monospace;color:#06FFA5}</style></head><body><h1>HeshBot local demo</h1><p>Click the bubble bottom-right.</p>
+<!-- HeshBot: tiny launcher; the widget (heshbot.js + heshbot.css) loads only on first click. -->
+<script>
+(function(){
+  var ICON="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0%25'%20stop-color='%238B5CF6'/%3E%3Cstop%20offset='100%25'%20stop-color='%2367E8F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width='32'%20height='32'%20rx='9'%20fill='url(%23g)'/%3E%3Ctext%20x='16'%20y='22'%20font-family='Georgia,serif'%20font-size='15'%20font-weight='bold'%20text-anchor='middle'%20fill='%23000'%3ETH%3C/text%3E%3C/svg%3E";
+  var b=document.createElement("button");
+  b.type="button";b.id="heshbot-launch";b.setAttribute("aria-label","Open HeshBot chat");b.setAttribute("aria-haspopup","dialog");
+  b.style.cssText="position:fixed;right:20px;bottom:20px;width:52px;height:52px;border-radius:50%;border:1px solid rgba(6,255,165,.35);padding:8px;background:#1A2249;cursor:pointer;z-index:2147483000;box-shadow:0 4px 14px rgba(0,0,0,.4)";
+  b.innerHTML='<img src="'+ICON+'" alt="" width="34" height="34">';
+  b.addEventListener("click",function(){
+    if(window.HeshBot)return;
+    b.disabled=true;b.style.opacity=".6";
+    var s=document.createElement("script");s.src="/heshbot/heshbot.js?v=1";s.setAttribute("data-open","1");
+    s.onerror=function(){b.disabled=false;b.style.opacity="1";s.remove();};
+    document.body.appendChild(s);
+  },{once:false});
+  document.body.appendChild(b);
+})();
+</script>
+</body></html>
