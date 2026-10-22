@@ -20,15 +20,22 @@ Title: About Trevor Heshka: Full-Stack & AI Developer in Nanaimo, BC
 Summary: Trevor Heshka is a Nanaimo, BC full-stack and AI developer and IT support specialist with technical support experience since 1998. Founder of Hesh Co.
 Trevor Heshka
 HomeProjectsIT SupportFull-StackAIAboutContact
-Photo coming soon
 Nanaimo, BC · Hesh Co.
 ### About Trevor Heshka
 I'm Trevor Heshka, a full-stack and AI developer and IT support specialist based in Nanaimo, BC. I founded Hesh Co. in September 2026 to build web portals, data apps and AI assistants, and I've worked in technical support since 1998.
 ### What I do
-- Web portals and data apps: front ends, APIs and data migration
-- AI assistants and LLM apps (see AI apps)
+- Web portals and data apps: front ends, APIs, databases, sign-in and data migration, built and deployed end to end
+- Public-data apps that collect, clean, search and map public records: the BC Court List Archive (daily court lists searchable by name or court file number), the Civic Meeting Hub (council meeting agendas and minutes in one portal), the Nanaimo Bylaw Tracker and BC Real Estate Market Pulse (regional market data, maps, charts and AI-written summaries)
+- Portals with sign-in and role-based access, such as HubIQ, a support and governance platform with Firebase sign-in, Node and SQLite on IIS
+- Typical work: APIs, dashboards with charts and maps, Firebase authentication, importing and cleaning public data, SQLite full-text search, and migrating existing data into new systems
+- AI assistants and LLM apps (see AI development)
+- Custom LLM models that I build and fine-tune for my own apps; my latest projects run on them (how I approach custom LLM development)
+- HeshBot, the Google Gemini-powered assistant on this site, grounded in its own content and open source (how I built it)
+- Data labelling and annotation tools for AI training data, such as AnnotatorIQ
+- AI coding tools and agent workflows, including MeshCode, my local-first AI coding IDE with an agent pipeline in isolated git worktrees
+- AI-written summaries over public data, as in BC Real Estate Market Pulse
 - Computer, laptop and phone repair, networking and security cameras in Nanaimo (see IT support)
-- Deployment on IIS with Firebase sign-in, Cloudflare Workers/R2 and GitHub Actions
+- Deployment on IIS with Firebase sign-in, Google Cloud, Cloudflare Workers/R2 and GitHub Actions
 ### Background
 My first technical support job was at Videon Cable Systems in 1998, troubleshooting cable modems, routers, Wi-Fi and email. From 2003 to 2006 I worked in Microsoft MSN support, rising from technical support to Tier 3 and then supervisor of a team of up to 20 agents. From 2006 to 2011 I was a technical support analyst at Shaw Cable, resolving 30 to 40 internet, TV and phone tickets a day.
 From 2011 to 2019 I owned and ran Yard Plots Landscaping in Nanaimo. Since 2020 I've repaired computers and phones and installed security camera systems for local homes and small businesses. I also volunteered on the City of Nanaimo Parks and Recreation committee from 2017 to 2019.
@@ -50,7 +57,7 @@ A full-stack and AI developer and IT support specialist based in Nanaimo, BC, an
 When was Hesh Co. founded?
 September 2026, to build web portals, data apps and AI assistants.
 How long has Trevor worked in technical support?
-Since 1998, starting at Videon Cable Systems, then Microsoft MSN support (2003–2006) and Shaw Cable (2006–2011).
+Since 1998, starting at Videon Cable Systems, then Microsoft MSN support (2003–2006) and Shaw Cable (2006–2011). Today he runs Hesh Co., which he founded in September 2026.
 What certificates does Trevor hold?
 The NPower Canada Junior IT Analyst Program, the Google IT Support Professional Certificate and Google Cybersecurity Specialization, and Cisco Networking Academy courses, all in 2024.
 How do I contact Trevor?
@@ -191,12 +198,12 @@ Email trevor@trevorheshka.com See past projects
 - Public-data web apps: collect, clean, search and map data
 - APIs and data migration
 - AI assistants built into web apps
-- Deployment on IIS, Cloudflare Workers/R2 and Firebase
+- Deployment on IIS, Google Cloud, Cloudflare Workers/R2 and Firebase
 - CI/CD with GitHub Actions, plus ongoing maintenance
 ### Work types and stack
 - Front end: HTML, CSS, JavaScript/TypeScript, React
 - Back end: Node.js, SQL/SQLite, Python
-- Auth and hosting: Firebase authentication, IIS, Cloudflare Workers and R2
+- Auth and hosting: Firebase authentication, IIS, Google Cloud, Cloudflare Workers and R2
 - HeshBot: this site's AI chat assistant, a dependency-free JavaScript widget with a PHP 7.4 API, rate limiting and same-origin checks
 - HubIQ: support and governance platform with Firebase sign-in, role-based access, Node and SQLite on IIS
 - Agile and Scrum workflow; Trello and JIRA
@@ -218,7 +225,7 @@ Yes. I work remotely with clients anywhere in Canada and can meet in person on V
 Can I see work you've built?
 Yes. The Nanaimo City Portal (Bylaw Tracker), Civic Meeting Hub, BC Court List Archive and BC Real Estate Market Pulse are live on this site.
 Which technologies do you use?
-React, TypeScript, Node.js, SQL and Python, with Firebase authentication, IIS, Cloudflare Workers/R2 and GitHub Actions for deployment.
+React, TypeScript, Node.js, SQL and Python, with Firebase authentication, IIS, Google Cloud, Cloudflare Workers/R2 and GitHub Actions for deployment.
 How do I start a project?
 Email trevor@trevorheshka.com with a short description of the project and I'll reply to set up a call.
 Can I see private projects?
@@ -248,7 +255,7 @@ Web portals, public-data apps, APIs and data migration, built and deployed end t
 - Web portals with sign-in and role-based access
 - Public-data web apps: collect, clean, search and map data
 - APIs and data migration
-- Deployment on IIS, Cloudflare Workers/R2 and Firebase, CI/CD with GitHub Actions
+- Deployment on IIS, Google Cloud, Cloudflare Workers/R2 and Firebase, CI/CD with GitHub Actions
 More about full-stack development
 ### AI and LLM development
 Custom LLM models, AI assistants in websites and apps, and LLM apps on top of your data.
@@ -425,7 +432,7 @@ The Civic Meeting Hub gathers public meeting agendas and minutes into one portal
 ### BC Real Estate Market Pulse
 BC Real Estate Market Pulse shows regional real estate market data, maps and charts across BC real estate boards, with AI-written summaries.
 ### How they're built
-The stack I work with for apps like these: HTML, CSS and JavaScript/TypeScript on the front end, Node.js, SQL/SQLite and Python behind them, and deployment on IIS, Cloudflare Workers/R2 and GitHub Actions.
+The stack I work with for apps like these: HTML, CSS and JavaScript/TypeScript on the front end, Node.js, SQL/SQLite and Python behind them, and deployment on IIS, Google Cloud, Cloudflare Workers/R2 and GitHub Actions.
 ### Need something similar?
 I build full-stack web apps and public-data tools. Email trevor@trevorheshka.com.
 ### Related
