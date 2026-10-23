@@ -1,0 +1,29 @@
+/* HeshBot avatar. Default: photo mode (single still photo, face-trevor.webp). Size via --hb-av-size.
+   Legacy 4-frame AI sprite mode: mount with {mode:"sprite", src:"avatar-sprite.webp"} (files kept, unused). */
+.hb-avatar{--hb-av-size:44px;--hb-av-glow:#06FFA5;width:var(--hb-av-size);height:var(--hb-av-size);border-radius:50%;
+  position:relative;flex:none;box-shadow:0 0 0 2px #fff,0 1px 4px rgba(0,0,0,.25)}
+.hb-avatar .hb-av-clip{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:#cfd6df}
+.hb-avatar .hb-av-face{position:absolute;inset:-4%;background-image:var(--hb-av-src,url(face-trevor.webp));
+  background-size:cover;background-position:50% 40%;background-repeat:no-repeat;
+  animation:hb-av-breathe 4.8s ease-in-out infinite,hb-av-sway 9s ease-in-out infinite;transform-origin:50% 85%}
+.hb-avatar[data-mode="sprite"] .hb-av-face{background-size:400% 100%;background-position:0 0}
+.hb-avatar[data-mode="sprite"][data-frame="1"] .hb-av-face{background-position:33.333% 0}
+.hb-avatar[data-mode="sprite"][data-frame="2"] .hb-av-face{background-position:66.667% 0}
+.hb-avatar[data-mode="sprite"][data-frame="3"] .hb-av-face{background-position:100% 0}
+.hb-avatar.hb-av-lg{--hb-av-size:160px;box-shadow:0 0 0 3px #fff,0 4px 14px rgba(0,0,0,.2)}
+/* Talking: neon ring + expanding sound-wave rings. No mouth animation in photo mode. */
+.hb-avatar::before,.hb-avatar::after{content:"";position:absolute;inset:-2px;border-radius:50%;pointer-events:none;
+  border:2px solid var(--hb-av-glow);opacity:0}
+.hb-avatar.is-talking{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--hb-av-glow),0 0 14px 4px rgba(6,255,165,.6);
+  animation:hb-av-pulse 1.1s ease-in-out infinite}
+.hb-avatar.is-talking::before{animation:hb-av-wave 1.6s ease-out infinite}
+.hb-avatar.is-talking::after{animation:hb-av-wave 1.6s ease-out .8s infinite}
+.hb-avatar.is-talking .hb-av-face{animation-duration:3.2s,6s}
+@keyframes hb-av-breathe{0%,100%{scale:1;translate:0 0}50%{scale:1.025;translate:0 -1.2%}}
+@keyframes hb-av-sway{0%,100%{rotate:0deg}25%{rotate:1.4deg}75%{rotate:-1.4deg}}
+@keyframes hb-av-pulse{0%,100%{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--hb-av-glow),0 0 8px 2px rgba(6,255,165,.45)}
+  50%{box-shadow:0 0 0 2px #fff,0 0 0 5px var(--hb-av-glow),0 0 22px 8px rgba(6,255,165,.75)}}
+@keyframes hb-av-wave{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.45);opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .hb-avatar .hb-av-face,.hb-avatar.is-talking,.hb-avatar.is-talking::before,.hb-avatar.is-talking::after{animation:none}
+  .hb-avatar.is-talking{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--hb-av-glow),0 0 14px 4px rgba(6,255,165,.6)}}

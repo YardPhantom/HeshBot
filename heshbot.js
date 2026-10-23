@@ -72,7 +72,19 @@
     if (document.querySelector('link[data-heshbot]')) return;
     var l = el("link", { rel: "stylesheet", href: base + "heshbot.css", "data-heshbot": "" });
     document.head.appendChild(l);
+    document.head.appendChild(el("link", { rel: "stylesheet", href: base + "avatar.css", "data-heshbot-av": "" }));
   }
+  var avQ = [];
+  function avReady(fn) {
+    if (window.HeshAvatar) return fn();
+    avQ.push(fn);
+    if (avQ.length > 1 || document.querySelector("script[data-heshbot-av]")) return;
+    var s = el("script", { src: base + "avatar.js", "data-heshbot-av": "" });
+    s.onload = function () { var q = avQ; avQ = []; q.forEach(function (f) { f(); }); };
+    document.head.appendChild(s);
+  }
+  function avTalkFor(t) { if (window.HeshAvatar) HeshAvatar.talkFor(t); }
+  function avIdle() { if (window.HeshAvatar) HeshAvatar.idle(); }
   function addMsg(role, text, cls) {
     var d = el("div", { class: "hb-msg " + (role === "user" ? "hb-user" : "hb-bot") + (cls ? " " + cls : "") });
     if (role === "user") d.textContent = text; else d.innerHTML = md(text);
@@ -91,10 +103,12 @@
     launch.setAttribute("aria-expanded", "false");
     launch.setAttribute("aria-controls", "hb-panel");
     root.appendChild(launch);
+    avReady(function () { launch.innerHTML = ""; var la = el("div"); launch.appendChild(la); HeshAvatar.mount(la, { size: 44, src: base + "face-trevor.webp" }); });
     panel = el("div", { id: "hb-panel", class: "hb-panel", role: "dialog", "aria-modal": "false", "aria-labelledby": "hb-title" });
     panel.hidden = true;
     var head = el("div", { class: "hb-head" });
-    head.innerHTML = '<img src="' + ICON + '" alt="">';
+    var ha = el("div"); head.appendChild(ha);
+    avReady(function () { HeshAvatar.mount(ha, { size: 40, src: base + "face-trevor.webp" }); });
     var t = el("div", { class: "hb-title" });
     t.appendChild(el("strong", { id: "hb-title" }, "HeshBot"));
     t.appendChild(el("span", null, "Trevor Heshka · Nanaimo, BC"));
@@ -142,6 +156,7 @@
   }
   function close() {
     if (!panel) return;
+    avIdle();
     panel.hidden = true; root.classList.remove("hb-open");
     launch.setAttribute("aria-expanded", "false"); launch.setAttribute("aria-label", "Open HeshBot chat");
     (lastFocus && lastFocus.focus ? lastFocus : launch).focus();
@@ -166,10 +181,10 @@
       return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; });
     }).then(function (res) {
       var reply = res.j && typeof res.j.reply === "string" ? res.j.reply : "";
-      if (res.ok && reply) { state.msgs.push({ role: "model", content: reply }); save(); addMsg("model", reply); }
-      else { state.msgs.pop(); save(); addMsg("model", reply || "Sorry, something went wrong. Please email trevor@trevorheshka.com.", "hb-err"); }
+      if (res.ok && reply) { state.msgs.push({ role: "model", content: reply }); save(); addMsg("model", reply); avTalkFor(reply); }
+      else { avIdle(); state.msgs.pop(); save(); addMsg("model", reply || "Sorry, something went wrong. Please email trevor@trevorheshka.com.", "hb-err"); }
     }).catch(function () {
-      state.msgs.pop(); save();
+      avIdle(); state.msgs.pop(); save();
       addMsg("model", "I couldn't reach the server. Please try again, or email trevor@trevorheshka.com.", "hb-err");
     }).then(function () {
       clearTimeout(timer); typing.remove(); state.busy = false; sendBtn.disabled = false; input.focus();

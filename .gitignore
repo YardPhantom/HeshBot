@@ -5,3 +5,5 @@ api/data/
 .env
 .DS_Store
 node_modules/
+SALES-PLAN.md
+PRICING-REVIEW.md
