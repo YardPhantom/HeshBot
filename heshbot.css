@@ -9,7 +9,8 @@
 .hb-panel{position:fixed;right:20px;bottom:84px;width:380px;max-width:calc(100vw - 24px);height:560px;max-height:calc(100vh - 110px);display:flex;flex-direction:column;background:var(--hb-panel);border:1px solid var(--hb-border);border-radius:16px;box-shadow:var(--hb-shadow);overflow:hidden;z-index:2147483001}
 .hb-panel[hidden]{display:none}
 .hb-head{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--hb-bg);border-bottom:1px solid var(--hb-border)}
-.hb-head img{width:30px;height:30px;border-radius:8px}
+.hb-head .hb-avatar{box-shadow:0 0 0 2px #fff}
+.hb-launch .hb-avatar{pointer-events:none}
 .hb-title{flex:1;min-width:0}
 .hb-title strong{display:block;font:600 14px/1.2 "Fragment Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--hb-accent)}
 .hb-title span{font-size:12px;color:var(--hb-muted)}
