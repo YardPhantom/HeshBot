@@ -30,7 +30,7 @@ I'm Trevor Heshka, a full-stack and AI developer and IT support specialist based
 - Typical work: APIs, dashboards with charts and maps, Firebase authentication, importing and cleaning public data, SQLite full-text search, and migrating existing data into new systems
 - AI assistants and LLM apps (see AI development)
 - Custom LLM models that I build and fine-tune for my own apps; my latest projects run on them (how I approach custom LLM development)
-- HeshBot, the Google Gemini-powered assistant on this site, grounded in its own content and open source (how I built it)
+- HeshBot, the AI assistant on this site, grounded in its own content and open source (how I built it)
 - Data labelling and annotation tools for AI training data, such as AnnotatorIQ
 - AI coding tools and agent workflows, including MeshCode, my local-first AI coding IDE with an agent pipeline in isolated git worktrees
 - AI-written summaries over public data, as in BC Real Estate Market Pulse
@@ -84,7 +84,7 @@ Email trevor@trevorheshka.com See past projects
 - Agent workflows and AI coding tools for development teams
 - Deployment, sign-in and API key handling
 ### AI projects
-- HeshBot: the Gemini-powered assistant on this site, grounded in its own content, with a vanilla JS widget and PHP backend (open source)
+- HeshBot: the AI assistant on this site, grounded in its own content, with a vanilla JS widget and PHP backend (open source)
 - AnnotatorIQ: a data annotation app published on this site
 - MeshCode: a local-first AI coding IDE with an agent pipeline in isolated git worktrees, a sandboxed shell and OS-vault API keys
 - BC Real Estate Market Pulse: regional market data with AI-powered insights
@@ -125,7 +125,7 @@ Open source · Nanaimo, BC
 ### Projects
 Software I've built and published: radio and signal tools, automation, and public-data sites for Nanaimo and BC. Source code is on GitHub.
 ### All projects
-- HeshBot — HeshBot: Trevor Heshka's own Gemini-powered website assistant. A dependency-free vanilla JS chat widget with a PHP 7.4 backend, rate limiting, and answers grounded in this site's content. Open source. · GitHub
+- HeshBot — HeshBot: Trevor Heshka's own AI website assistant. A dependency-free vanilla JS chat widget with a PHP 7.4 backend, rate limiting, and answers grounded in this site's content. Open source. · GitHub
 - HeshRadio — HeshRadio: SDR receiver (100 kHz–1.75 GHz), CAT rig controller and digital modes station for Windows and Android, built with Rust, Tauri v2, React and TypeScript. · GitHub
 - WiFi Body Sensor — WiFi Body Sensor: experimental through-wall motion and breathing sensing on Windows using a desktop Wi-Fi adapter and a Telus Wi-Fi modem, written in Python. · GitHub
 - Nanaimo City Portal (Bylaw Tracker) — Independent archive of public City of Nanaimo bylaws, Council records and committee activity. · GitHub
@@ -278,23 +278,23 @@ Writing · Nanaimo, BC
 Notes on how I build AI and full-stack projects.
 ### Articles
 - How I approach custom LLM development — I build and fine-tune custom LLM models for my own apps, and my latest projects run on them. Here is where that work sits alongside the other AI tools I build.
-- How I built HeshBot, the AI assistant on this site — HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls Google Gemini, grounded in this site's public pages.
+- How I built HeshBot, the AI assistant on this site — HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls an AI model, grounded in this site's public pages.
 - Building public-data apps for BC: court lists, council meetings and real estate — Several of my live builds turn public British Columbia data into searchable web apps: the BC Court List Archive, the Civic Meeting Hub, the Nanaimo Bylaw Tracker and BC Real Estate Market Pulse.
 © 2026 Trevor Heshka · Nanaimo, BC · trevor@trevorheshka.com
 
 ## Project: heshbot (https://trevorheshka.com/projects/heshbot/)
-Title: HeshBot — Gemini AI Website Chatbot (Open Source) | Trevor Heshka
-Summary: HeshBot: Trevor Heshka's own Gemini-powered website assistant. A dependency-free vanilla JS chat widget with a PHP 7.4 backend, rate limiting, and answers grounded in this site's content. Open source.
+Title: HeshBot — AI Website Chatbot (Open Source) | Trevor Heshka
+Summary: HeshBot: Trevor Heshka's own AI website assistant. A dependency-free vanilla JS chat widget with a PHP 7.4 backend, rate limiting, and answers grounded in this site's content. Open source.
 Trevor Heshka
 HomeProjectsFull-StackAIAboutContact
 Open source · AI · Vanilla JS · PHP
 ### HeshBot
-HeshBot is the chat assistant on this website. I built it to replace a third-party chat widget: it runs on my own hosting, calls the Google Gemini API, and answers questions about my services and projects using only the public content of this site. When it doesn't know something, it says so and points you to email.
+HeshBot is the chat assistant on this website. I built it to replace a third-party chat widget: it runs on my own hosting, calls an AI model, and answers questions about my services and projects using only the public content of this site. When it doesn't know something, it says so and points you to email.
 View source on GitHub All projects
 ### What it does
 - Answers visitor questions about my full-stack, AI and IT support work, grounded in a knowledge file built from this site's pages
 - Says it doesn't know instead of guessing, and suggests emailing trevor@trevorheshka.com
-- Falls back to other Gemini flash models when one is unavailable, with a friendly message when the free quota runs out
+- Falls back to another model when one is unavailable, with a friendly message when it can't answer
 ### Front end
 - Dependency-free vanilla JavaScript and CSS widget
 - A small launcher bubble; the widget only loads when you click it
@@ -302,21 +302,21 @@ View source on GitHub All projects
 - Markdown-lite rendering that escapes the model's output before formatting it
 - Conversation kept in sessionStorage for the current tab only
 ### Back end
-- Single PHP 7.4 endpoint using curl to call the Gemini REST API
+- Single PHP 7.4 endpoint using curl to call an AI model's API
 - API key kept in a config file outside the web root
 - Per-IP rate limiting (file-based), message length and history caps, and a same-origin check
 - JSON errors, and only the chat endpoint is reachable from the web
 ### Built with
 - JavaScript, CSS, PHP 7.4, Python (knowledge build script)
-- Google Gemini API
+- HeshLLM:20B (AI model)
 - MIT licence
 ### FAQ
 What is HeshBot?
-HeshBot is the chat assistant on trevorheshka.com. It calls the Google Gemini API and answers questions using only the public content of this site.
+HeshBot is the chat assistant on trevorheshka.com. It calls an AI model and answers questions using only the public content of this site.
 Is HeshBot open source?
 Yes. The code is MIT-licensed on GitHub at github.com/YardPhantom/HeshBot.
 What is HeshBot built with?
-A dependency-free vanilla JavaScript and CSS widget, a single PHP 7.4 endpoint that uses curl to call the Gemini REST API, and a Python script that builds its knowledge file from the site's pages.
+A dependency-free vanilla JavaScript and CSS widget, a single PHP 7.4 endpoint that uses curl to call an AI model's API, and a Python script that builds its knowledge file from the site's pages.
 How does HeshBot avoid making things up?
 It is grounded in a knowledge file built from this site's pages, and when the answer isn't there it says so and suggests emailing trevor@trevorheshka.com.
 How is HeshBot protected from abuse?
@@ -454,7 +454,7 @@ I build and fine-tune custom LLM models for my own apps, and my latest projects 
 - MeshCode: my local-first AI coding IDE, which runs an agent pipeline in isolated git worktrees with a sandboxed shell and keeps API keys in the OS vault
 - BC Real Estate Market Pulse: AI-written summaries over public market data
 ### Hosted models still have a place
-Not everything needs a custom model. HeshBot, the assistant on this site, calls the Google Gemini API and is grounded in a knowledge file built from the site's own pages, which keeps it simple to run.
+Not everything needs a custom model. HeshBot, the assistant on this site, calls an AI model and is grounded in a knowledge file built from the site's own pages, which keeps it simple to run.
 ### Working with me
 I build AI assistants into websites and web apps and handle the hosting, sign-in and API keys around them. See AI development or email trevor@trevorheshka.com.
 ### Related
@@ -465,12 +465,12 @@ I build AI assistants into websites and web apps and handle the hosting, sign-in
 
 ## Article: how-heshbot-was-built (https://trevorheshka.com/writing/how-heshbot-was-built/)
 Title: How I built HeshBot, the AI assistant on this site | Trevor Heshka
-Summary: HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls Google Gemini, grounded in this site's public pages.
+Summary: HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls an AI model, grounded in this site's public pages.
 Trevor Heshka
 HomeProjectsServicesWritingAIAboutContact
 AI · Open source · October 21, 2026 · Trevor Heshka
 ### How I built HeshBot, the AI assistant on this site
-HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls Google Gemini, grounded in this site's public pages.
+HeshBot replaced a third-party chat widget on trevorheshka.com. It's a dependency-free JavaScript widget and a single PHP 7.4 endpoint that calls an AI model, grounded in this site's public pages.
 ### Why build my own
 The site used a third-party Typebot widget that loaded about 164 KB from a CDN. I wanted a chat assistant that runs on my own hosting, answers from my own content, and loads nothing until someone asks for it.
 ### The widget
@@ -481,15 +481,15 @@ The site used a third-party Typebot widget that loaded about 164 KB from a CDN. 
 - A markdown-lite renderer that escapes the model's output first, then allows a small whitelist of formatting and safe links
 - The conversation is kept in sessionStorage, so it lasts for the current tab only
 ### The backend
-- One PHP 7.4 file using curl to call the Gemini REST API, because that's what the cPanel/LiteSpeed host runs
+- One PHP 7.4 file using curl to call an AI model's API, because that's what the cPanel/LiteSpeed host runs
 - The API key lives in a config file outside public_html (or an environment variable), never in the repo
-- It tries a list of Gemini flash models in order and falls back on errors, with a friendly “email Trevor” message when the free quota runs out
+- It tries a list of models in order and falls back on errors, with a friendly “email Trevor” message when it can't answer
 - Per-IP file-based rate limiting, message length and history caps, a same-origin check and JSON errors
 - An .htaccess file makes chat.php the only reachable file in the API folder
 ### Grounding
 A Python script reads the site's public pages (home, about, AI, projects, services and the landing pages) and writes a knowledge file. The system prompt tells HeshBot to answer only from that file, to say it doesn't know otherwise, and to point people to email. When the site changes, I rerun the script.
 ### Testing
-I tested it locally on Apache with PHP, checked the PHP against 7.4 compatibility rules, mocked the Gemini call when no key was present, and took desktop and mobile screenshots in headless Chrome before going live.
+I tested it locally on Apache with PHP, checked the PHP against 7.4 compatibility rules, mocked the model call when no key was present, and took desktop and mobile screenshots in headless Chrome before going live.
 ### Source
 HeshBot is MIT-licensed: github.com/YardPhantom/HeshBot. More detail is on the project page.
 ### Related
