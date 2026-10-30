@@ -45,3 +45,13 @@ With no `GEMINI_API_KEY`, the endpoint returns a mock reply.
 
 ## License
 MIT. See `LICENSE`.
+
+---
+
+## Live app & author
+
+- **Live:** [HeshBot on trevorheshka.com](https://trevorheshka.com/)
+- Built by [Trevor Heshka](https://trevorheshka.com/about/) · [Hesh Co.](https://trevorheshka.com/services/), Nanaimo, BC
+- More projects: https://trevorheshka.com/projects/
+
+Also set the repo **Website** field: already https://trevorheshka.com. Optional: link the write-up on https://trevorheshka.com/ai/.
